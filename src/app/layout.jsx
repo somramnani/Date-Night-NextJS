@@ -1,7 +1,6 @@
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
 import { Inter, Sansita_Swashed } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });

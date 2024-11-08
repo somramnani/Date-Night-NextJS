@@ -1,9 +1,21 @@
 "use client";
+
+import { useEffect, useState } from "react";
 import { Navbar as ReactNavbar, Nav } from "react-bootstrap";
 import Link from "next/link";
 import { sansitaSwashed } from "../../app/layout";
 
 const Navbar = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true); // Trigger re-render after client-side mount
+  }, []);
+
+  if (!isClient) {
+    return null; // You can render a fallback like a static navbar or loading state here
+  }
+
   return (
     <ReactNavbar bg="light" expand="lg">
       <ReactNavbar.Brand
