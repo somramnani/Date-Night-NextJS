@@ -4,9 +4,6 @@ import { useEffect, useState } from "react";
 import { Navbar as ReactNavbar, Nav } from "react-bootstrap";
 import Link from "next/link";
 import { sansitaSwashed } from "../../app/layout";
-import { LuLogIn } from "react-icons/lu";
-import { GrLogin } from "react-icons/gr";
-import { BiSolidLogIn } from "react-icons/bi";
 import { IoIosLogIn } from "react-icons/io";
 
 const Navbar = () => {
