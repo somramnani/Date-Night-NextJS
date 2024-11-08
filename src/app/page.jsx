@@ -1,5 +1,6 @@
 import Navbar from "../components/navbar/navbar";
 import { sansitaSwashed } from "../app/layout";
+import Searchbar from "../components/Searchbar";
 
 export default function Home() {
   return (
@@ -13,8 +14,9 @@ export default function Home() {
           justifyContent: "center",
         }}
       >
-        Plan your date{" "}
+        Plan your date
       </h1>
+      <Searchbar />
     </div>
   );
 }
